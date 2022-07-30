@@ -1,7 +1,4 @@
 import main
-from flask import Flask
-import datetime
-
 
 
 def test_index():
