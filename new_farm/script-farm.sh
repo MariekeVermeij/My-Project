@@ -3,4 +3,4 @@
 cd $GITHUB_WORKSPACE
 cd ..
 cp ~/my-project/new_farm/main.py home/farm
-systemctl restart my-application
+systemctl restart farm
