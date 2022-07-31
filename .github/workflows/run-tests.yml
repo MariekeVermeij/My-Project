@@ -21,7 +21,7 @@ jobs:
   run-sh-file:
     needs: run-tests
     runs-on: ubuntu-20.04
-      steps:
-        - name: Run-sh-file
-          run: echo $/my-project/new_farm/script-farm.sh
-          shell: bash
+    steps:
+      - name: Run-sh-file
+        run: echo $/my-project/new_farm/script-farm.sh
+        shell: bash
