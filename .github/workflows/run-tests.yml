@@ -24,7 +24,8 @@ jobs:
     steps:
 
       - name: Run-sh-file
-        run: mkdir vogel
+        run: echo "let's test"
+#       run: mkdir vogel --> werkt maar doet niets net als copy origineel
 #       run: mkdir ~/my-project/vogel --> mkdir: cannot create directory ‘/home/runner/my-project/vogel’: No such file or directory
 #       run: nano vogel.txt  --> Error opening terminal: unknown.
 #       run: echo $/my-project/new_farm/script-farm.sh
