@@ -1,9 +1,0 @@
-on: push
-jobs:
-# This is only a test test -to see if part2 is working
-  run-sh-file:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Run-sh-file
-        run: echo $/my-project/new_farm/script-farm.sh
-        shell: bash
