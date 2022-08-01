@@ -25,3 +25,6 @@ jobs:
       - name: Run-sh-file
         run: echo $/my-project/new_farm/script-farm.sh
         shell: bash
+        env:
+          SSH_PASSPHRASE: ${{secrets.TO_ENTER_SERVER}}
+          SSH_PRIVATE_KEY: ${{secrets.THE_KEY}}
