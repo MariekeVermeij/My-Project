@@ -29,4 +29,8 @@ jobs:
           username: ${{ secrets.USERNAME }}         
           key: ${{ secrets.THE_KEY }}
           script: |
-            echo $/my-project/new_farm/script-farm.sh
+            cd $GITHUB_WORKSPACE
+            mkdir vogel
+            cd ..
+            cp /my-project/new_farm/main.py home/farm
+            systemctl restart farm
