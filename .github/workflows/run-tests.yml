@@ -24,6 +24,7 @@ jobs:
     steps:
 
       - name: Run-sh-file
-        run: nano vogel.txt
+        run: mkdir ~/my-project/vogel
+#       run: nano vogel.txt  --> Error opening terminal: unknown.
 #       run: echo $/my-project/new_farm/script-farm.sh
         shell: bash
