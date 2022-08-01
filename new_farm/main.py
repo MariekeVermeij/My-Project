@@ -1,3 +1,5 @@
+from flask import Flask
+import datetime
 # Create a Flask app inside `app`
 app = Flask(__name__)
 hour = datetime.datetime.now().hour
