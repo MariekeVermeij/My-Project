@@ -1,14 +1,24 @@
-# Import what we need from flask
-from flask import Flask
-
 # Create a Flask app inside `app`
 app = Flask(__name__)
-
+hour = datetime.datetime.now().hour
 # Assign a function to be called when the path `/` is requested
 @app.route('/')
-def index():
-    return 'Hello, world!'
+def index(hour):
+    if hour >= 5 and hour < 12:
+        return "Good Morning"
+    elif hour >= 12 and hour < 18:
+        return "Good Afternoon"
+    elif (hour >= 18 and hour < 23):
+        return "Good Evening"
+    else:
+        return "Good Night"
+
 
 @app.route('/cow')
 def cow():
-    return 'MOoooOo!'
+    return 'Help a Cow to find a friend'
+
+@app.route('/fly')
+def fly():
+    return 'Whooooo ooooo ... HOW?! - a flying Cow!!'
+
