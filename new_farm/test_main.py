@@ -1,10 +1,6 @@
 import main
 
 
-def test_index():
-    assert main.index(2) == "Good Night"
-
-
 def test_cow():
     assert main.cow() == 'Help a Cow to find a friend'
 
