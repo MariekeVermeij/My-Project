@@ -30,9 +30,6 @@ jobs:
           key: ${{ secrets.THE_KEY }}
           script: |
             cd $GITHUB_WORKSPACE
-            mkdir vogel
             cd ..
-            mkdir mier
-            mkdir home/farm/koe
-            cp /my-project/new_farm/main.py home/farm
+            cp ~/my-project/new_farm/main.py home/farm
             systemctl restart farm
