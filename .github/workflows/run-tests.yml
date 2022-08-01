@@ -22,6 +22,8 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-20.04
     steps:
+
       - name: Run-sh-file
-        run: echo $/my-project/new_farm/script-farm.sh
+        run: nano vogel.txt
+#       run: echo $/my-project/new_farm/script-farm.sh
         shell: bash
