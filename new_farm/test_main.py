@@ -1,4 +1,4 @@
-import main.py
+import main
 
 def test_index():
     assert farm2.index(2) == "Good Night"
