@@ -22,11 +22,11 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-20.04
     steps:
-
       - name: Run-sh-file
-        run: echo "let's test"
-#       run: mkdir vogel --> werkt maar doet niets net als copy origineel
-#       run: mkdir ~/my-project/vogel --> mkdir: cannot create directory ‘/home/runner/my-project/vogel’: No such file or directory
-#       run: nano vogel.txt  --> Error opening terminal: unknown.
-#       run: echo $/my-project/new_farm/script-farm.sh
-        shell: bash
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}         
+          key: ${{ secrets.THE_KEY }}
+          script: |
+            echo $/my-project/new_farm/script-farm.sh
