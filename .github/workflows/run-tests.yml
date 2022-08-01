@@ -26,4 +26,4 @@ jobs:
       - name: Run-sh-file
         run: echo $/my-project/new_farm/script-farm.sh
         shell: bash
-        with: SSH_PRIVATE_KEY: ${{secrets.THE_KEY}}
+        with: ${{secrets.THE_KEY}}
