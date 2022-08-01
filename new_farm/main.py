@@ -6,7 +6,7 @@ app = Flask(__name__)
 hour = datetime.datetime.now().hour
 # Assign a function to be called when the path `/` is requested
 @app.route('/')
-def index(hour):
+def index():
     if hour >= 5 and hour < 12:
         return "Good Morning"
     elif hour >= 12 and hour < 18:
